@@ -1,0 +1,171 @@
+.card_buttom_block_container{
+    display: grid;
+    place-items: center;
+}
+
+.card_buttom_block{
+    display: grid;
+    gap: 30px;
+    margin-top: 80px;
+    margin-bottom: 170px;
+}
+
+.card_buttom{
+    display: grid;
+    width: var(--width_big);
+    height: 155px;
+    background-color: var(--gray_color);
+    border-radius: 45px;
+    border: 1px solid black;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    gap: 30px;
+    transition: height 0.3s ease, background-color 0.3s ease;
+}
+
+.card_buttom_title{
+    display: grid;
+    grid-template-columns: 70px 965px 60px;
+    height: 75px;
+    gap: 25px;
+}
+
+.card_buttom_title p, button{
+    display: grid;
+    align-items: center;
+}
+
+.card_buttom_title button{
+    display: grid;
+    align-items: center;
+    background-color: var(--gray_color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+}
+
+.line{
+    display: block;
+    width: 1115px;
+    height: 1px;
+    background-color: black;
+}
+
+.card_buttom_text{
+    display: grid;
+    gap: 30PX;
+}
+
+.hidden{
+    display: none;
+}
+
+.card_buttom_text_container{
+    opacity: 0; /* Начальное состояние - скрыто */
+    transition: opacity 0.3s; /* Плавный переход с задержкой 1с */
+}
+
+.card_buttom_text_container:not(.hidden) {
+    opacity: 1; /* Плавное появление текста */
+}
+
+.minus{
+    width: 28px;
+    height: 5px;
+    left: 10px;
+    bottom: 20px; 
+    background-color: var(--black_color);
+    position: relative;
+}
+
+.plus{
+    width: 5px;
+    height: 28px;
+    left: 21px;
+    top: 7px;
+    background-color: black;
+    position: relative;
+}
+
+.card_buttom_title_name{
+    font-size: 30px;
+}
+
+.card_buttom_title_figure{
+    font-size: 60px;
+}
+
+#_1, #_2, #_3, #_4, #_5, #_6{
+    cursor: pointer;
+}
+
+@media(max-width:430px){
+    .card_buttom{
+        width: 390px;
+        padding: 30px;
+    }
+
+    .card_buttom_title_name{
+        font-size: 18px;  
+        height: 40px;
+    }
+
+    .card_buttom_title_figure{
+        font-size: 30px;
+        height: 35px;
+    }
+
+    .card_buttom_title{
+        grid-template-columns: 34px 203px 30px;
+    }
+
+    .card_buttom{
+        height: 100px;
+        width: 410px;
+    }
+
+    .card_buttom_block{
+        width: 410px;
+    }
+
+    .card_buttom_block_container{
+        width: 430px;
+    }
+
+    .line{
+        width: 350px;
+    }
+
+    .card_buttom_title button{
+        width: 40px;
+        height: 40px;
+    }
+
+    .card_buttom_title{
+        gap: 40px;
+    }
+
+    .minus{
+        width: 25px;
+        height: 5px;
+        left: 2px;
+        bottom: 15px; 
+        background-color: var(--black_color);
+        position: relative;
+    }
+    
+    .plus{
+        width: 5px;
+        height: 25px;
+        left: 11.5px;
+        top: 4px;
+        background-color: black;
+        position: relative;
+    }
+
+    .card_buttom_block{
+        margin-bottom: 75px;
+    }
+
+}

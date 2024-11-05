@@ -1,0 +1,172 @@
+.services_block{
+    width: var(--width_big);
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2,600px);
+    grid-template-rows: repeat(3,310px);
+    gap: 40px;
+}
+
+.block{
+    border: 1px solid black;
+    border-radius: 45px;
+    padding: 50px;
+    width: 600px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    gap: 75px;
+}
+
+.gray{
+    background-color: rgb(243, 243, 243);
+}
+
+.grin{
+    background-color: rgb(185, 255, 102);
+}
+
+.black{
+    background-color: rgb(25, 26, 35);
+}
+
+.search{
+    background-color: rgb(185, 255, 102);
+    color: black;
+    padding: 0 7px;
+    width: 230px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.optimization{
+    background-color: rgb(185, 255, 102);
+    color: black;
+    padding: 0 7px;
+    width: 200px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.learn_more{
+    display: flex;
+    align-items: center;
+    margin-top: 93px;
+    gap: 15px;
+}
+
+.pay-per-click{
+    background-color: white;
+    color: black;
+    padding: 0 7px;
+    width: 210px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.advertising{
+    background-color: white;
+    color: black;
+    padding: 0 7px;
+    width: 180px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.email{
+    background-color: rgb(185, 255, 102);
+    color: black;
+    padding: 0 7px;
+    width: 90px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.marketing{
+    background-color: rgb(185, 255, 102);
+    color: black;
+    padding: 0 7px;
+    width: 160px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.content{
+    background-color: white;
+    color: black;
+    padding: 0 7px;
+    width: 130px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.creation{
+    background-color: white;
+    color: black;
+    padding: 0 7px;
+    width: 140px;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.analytics_and{
+    background-color: rgb(185, 255, 102);
+    color: black;
+    padding: 0 7px;
+    width: 220px;
+    box-sizing: border-box;
+    border-radius: 7px;
+} 
+
+.tracking{
+    background-color: rgb(185, 255, 102);
+    color: black;
+    padding: 0 7px;
+    width: 140px;
+    box-sizing: border-box;
+    border-radius: 7px;
+} 
+
+@media(max-width:430px){
+    .services_block_container{
+        display: grid;
+        place-items: center;
+        overflow-x: hidden;
+    }
+
+    .services_block{
+        width: 410px;
+        padding-inline: 10;
+        grid-template-columns: repeat(1,410px);
+        grid-template-rows: repeat(6,320px);
+        gap: 35px;
+    }
+
+    .block{
+        width: 410px;
+        gap: 0;
+        
+    }
+
+    .services_block_img img{
+        width: 165px;
+        position: relative;
+        top: 80px;
+        right: 30px;
+    }
+
+    .services_block_img{
+        width: 100px;
+    }
+
+    .services_block_img_exception img{
+        position: relative;
+        top: 30px;
+        left: 20px;
+        width: 165px;
+    }
+
+    .services_block_img_exception{
+        width: 100px;
+    }
+}

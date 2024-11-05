@@ -1,0 +1,131 @@
+/* Основной контейнер для слайдера */
+.slader_comments_container{
+    width: var(--width_big);
+    background-color: black;
+    border-radius: 45px;
+    height: 630px;
+}
+
+.slader_comments_block{
+  display: grid;
+  place-items: center;
+}
+
+.slider {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 20px;
+    display: grid;
+    place-items: center;
+  }
+
+  .comment{
+    width: 510px;
+  }
+
+  .comment p{
+    color: white;
+
+  }
+  
+  /* Слайды */
+  .slides {
+    width: 610px;
+    display: flex;
+    gap: 50px;
+    transition: transform 0.5s ease;
+  }
+
+
+  
+  .slide {
+    border-radius: 45px;
+    min-width: 92.5%;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: #000000;
+    border: 1px solid var(--grin_color);
+  }
+  
+  /* Кнопки переключения слайдов */
+  .prev, .next {
+
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Стили кнопок для выбора слайда */
+  .slide-selectors {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    position: relative;
+    right: 25px;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .select-slide {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    height: 15px;
+  }
+  
+
+  .star {
+    width: 0;
+    height: 0;
+    border-right: 7.5px solid transparent;
+    border-bottom: 5.25px solid var(--gray_color);
+    border-left: 7.5px solid transparent;
+    position: relative;
+    top: -4.5px;
+}
+
+.star:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 7.5px solid transparent;
+    border-bottom: 5.25px solid var(--gray_color);
+    border-left: 7.5px solid transparent;
+    position: absolute;
+    top: -2.625px;
+    left: -7.5px;
+    transform: rotate(-35deg);
+}
+
+.star:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 7.5px solid transparent;
+    border-bottom: 5.25px solid var(--gray_color);
+    border-left: 7.5px solid transparent;
+    position: absolute;
+    top: -2.625px;
+    left: -7.5px;
+    transform: rotate(35deg);
+}
+
+
+  

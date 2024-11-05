@@ -1,0 +1,164 @@
+/* Services */
+
+.services_h2{
+    width: 180px;
+    padding: 0 7px;
+    background-color: var(--grin_color);
+    border-radius: 7px;
+    text-align: center;
+}
+
+.services{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 180px 600px;
+    gap: 40px;
+    margin: 130px 0 80px 0;
+}
+
+/* Case Studies */
+
+.case_studies_block{
+    width: var(--width_big);
+    margin-top: 160px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 265px 580px;
+    gap: 40px;
+}
+
+.case_studies_h2{
+    padding: 0 7px;
+    background-color: var(--grin_color);
+    border-radius: 7px;
+    text-align: center;
+}
+
+/* Our Working Process  */
+
+.our_working_process_block{
+    width: var(--width_big);
+    margin-top: 140px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 430px 290px;
+    gap: 40px;
+}
+
+.our_working_process_h2{
+    padding: 0 7px;
+    background-color: var(--grin_color);
+    border-radius: 7px;
+    text-align: center;
+}
+
+.our_working_process_h2_mb{
+    display: none;
+}
+
+/* Team */
+
+.team_block{
+    width: var(--width_big);
+    display: grid;
+    place-items: center;
+    grid-template-columns: 255px 475px;
+    gap: 40px;
+}
+
+.team_h2{
+    background-color: var(--grin_color);
+    border-radius: 7px;
+}
+
+
+@media(max-width:430px){
+    /* Services */
+
+    .services{
+        place-items: center;
+        text-align: center;
+        width: 410px;
+        grid-template-columns: 410px;
+        grid-template-rows: 45px 75px;
+        gap: 30px;
+        margin: 70px 0 42px 0;
+        padding: 0 10px;
+    }
+
+    /* Case Studies */
+
+    .case_studies_block_container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .case_studies_block{
+        margin-top: 160px;
+        margin: 160px 0 40px 0;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 390px;
+        grid-template-rows: repeat(2, auto);
+        gap: 40px;
+        text-align: center;
+    }
+
+    /* Our Working Process  */
+
+    .our_working_process_block{
+        margin-top: 140px;
+        display: grid;
+        place-items: center;
+        grid-template-columns:390px;
+        grid-template-rows: repeat(3, auto);
+        gap: 40px;
+    }
+    
+    .our_working_process_h2{
+        display: none;
+    }
+
+    .our_working_process_h2_mb {
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+
+    .our_working_process_h2_mb_2{
+        background-color: var(--grin_color);
+        width: 160px;
+        border-radius: 7px;
+        padding: 0 7px;
+        box-sizing: border-box;
+    }
+
+    .our_working_process_h2_mb_1{
+        background-color: var(--grin_color);
+        width: 230px;
+        border-radius: 7px;
+        font-size: 36px;
+        padding: 0 7px;
+        box-sizing: border-box;
+    }
+
+    .our_working_process_block{
+        text-align: center;
+        width: 410px;
+    }
+
+    /* Team */
+
+    .team_block{
+        width: 410px;
+        grid-template-columns: 390px;
+        grid-template-rows: auto auto;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .team_block_container{
+        display: grid;
+        place-items: center;
+    }
+}
